@@ -18,8 +18,8 @@ plota= with(data,plot(datetime,Global_active_power,type="l",ylab="Global Active 
 
 plotb = with(data,plot(datetime,Voltage ,type="l",main=""))
 plotc= with(data,{plot(datetime,Sub_metering_1,type="l",xlab="")
-           points(Sub_metering_2,type="l",col="red")
-           points(Sub_metering_3,type="l",col="blue")
+           points(datetime,Sub_metering_2,type="l",col="red")
+           points(datetime,Sub_metering_3,type="l",col="blue")
            legend("topright",lty=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 })
 
